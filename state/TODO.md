@@ -12,5 +12,7 @@
       `git diff --check`.
 - [ ] Run an actual `colcon build` in the companion ROS 2 environment; this
       WSL workspace does not have ROS 2 or `colcon` installed.
-- [ ] Commit and push the branch, then publish an annotated immutable release
-      tag `hybrid-rover-v1.16.1-r1`.
+- [x] Commit and push the branch, then publish annotated tag
+      `hybrid-rover-v1.16.1-r1` at peeled commit `e0f41fb57e`.
+- [x] Create active GitHub ruleset `22433564` for the exact release tag, with
+      deletion and non-fast-forward updates prohibited.

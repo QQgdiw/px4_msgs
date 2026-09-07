@@ -18,3 +18,9 @@
 - ROS 2 and `colcon` are not installed in this WSL environment, so an actual
   `colcon build` remains a companion-workspace acceptance item and is not
   claimed as completed here.
+- Message commit `e0f41fb57ed9217ba15730854f6c7c92b0262134` was pushed on
+  `hybrid-rover-v1.16.1`. Annotated tag `hybrid-rover-v1.16.1-r1` has object
+  `6c0f64065af728ea1013e33793648dab7821e789` and peels to that commit.
+- GitHub ruleset `22433564` was created and read back as active for exactly
+  `refs/tags/hybrid-rover-v1.16.1-r1`; it prohibits deletion and
+  non-fast-forward tag updates.

@@ -4,6 +4,11 @@
 - Upstream base: `PX4/px4_msgs` branch `release/1.16`, commit
   `392e831c1f659429ca83902e66820d7094591410`.
 - Compatibility branch: `hybrid-rover-v1.16.1`.
+- Immutable compatibility tag: `hybrid-rover-v1.16.1-r1`, annotated tag object
+  `6c0f64065af728ea1013e33793648dab7821e789`, peeled message commit
+  `e0f41fb57ed9217ba15730854f6c7c92b0262134`.
+- GitHub ruleset `22433564` is active for that exact tag and prohibits deletion
+  and non-fast-forward updates.
 - Firmware source: `QQgdiw/PX4-Autopilot` branch
   `feature/testc4-rover-tuning`, commit
   `7c4fb9e638787435351437c4dfc99e417adffd85`.
