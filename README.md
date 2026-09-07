@@ -1,5 +1,18 @@
 # px4_msgs
 
+## QQgdiw Hybrid Quad/Rover compatibility pin
+
+The `hybrid-rover-v1.16.1` branch is synchronized from
+`QQgdiw/PX4-Autopilot` branch `feature/testc4-rover-tuning` at commit
+`7c4fb9e638787435351437c4dfc99e417adffd85`. It is the required ROS 2 message
+package for the `zeroone_x6_hybrid` companion-computer DDS interface.
+
+Do not replace this branch with the upstream `release/1.16` package: the
+upstream package does not define this project's exact-one-bit
+`OffboardControlMode.rover_velocity` contract or its matching
+`RoverVelocitySetpoint` type. MAVLink bindings are versioned separately and
+are not provided by this repository.
+
 [![GitHub license](https://img.shields.io/github/license/PX4/px4_msgs.svg)](https://github.com/PX4/px4_msg/blob/master/LICENSE) [![Build package](https://github.com/PX4/px4_msgs/workflows/Build%20package/badge.svg)](https://github.com/PX4/px4_msgs/actions)
 
 [![Discord Shield](https://discordapp.com/api/guilds/1022170275984457759/widget.png?style=shield)](https://discord.gg/dronecode)
@@ -54,4 +67,3 @@ Use the [Issues](https://github.com/PX4/px4_msgs/issues) section to create a new
 ## Questions and troubleshooting
 
 Reach the PX4 development team on the [PX4 Discord Server](https://discord.gg/dronecode).
-
