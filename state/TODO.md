@@ -1,5 +1,14 @@
 # TODO
 
+## 2026-10-29 VehicleLocalPosition v1
+
+- [x] Create isolated compatibility branch; preserve r1 branch/tag.
+- [x] Synchronize VehicleLocalPosition and compare all messages/services to PX4.
+- [x] Document versioned topic and rebuild requirement.
+- [ ] Commit and publish r2 annotated tag after firmware verification.
+- [ ] Companion colcon build, dependency rebuild, real DDS validation.
+- [ ] Verify/configure server-side tag protection separately.
+
 ## 2026-09-07 Hybrid/Rover compatibility release
 
 - [x] Create the `QQgdiw/px4_msgs` public fork from `PX4/px4_msgs`.

@@ -1,5 +1,18 @@
 # QQgdiw px4_msgs Hybrid/Rover state
 
+## 2026-10-29 local-heading release
+
+- New branch: `hybrid-rover-local-heading-v1.16.1`; release annotated tag
+  `hybrid-rover-v1.16.1-r2` (r1 must not move).
+- VehicleLocalPosition v1 adds heading_good_for_local_control. DDS topic gains
+  `_v1`; r1 is not automatically compatible. Existing MAVLink is unchanged.
+- Complete flattened message/service comparison against current testc4 firmware
+  passed. ROS/colcon and live DDS verification remain companion-side tasks.
+- Server-side protection for the new tag has not been verified; do not infer
+  immutability enforcement from the annotation or r1 ruleset.
+
+## Historical r1 release
+
 - Repository: `https://github.com/QQgdiw/px4_msgs.git`.
 - Upstream base: `PX4/px4_msgs` branch `release/1.16`, commit
   `392e831c1f659429ca83902e66820d7094591410`.

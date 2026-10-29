@@ -2,6 +2,29 @@
 
 ## QQgdiw Hybrid Quad/Rover compatibility pin
 
+### Local-heading release (2026-10-29)
+
+Branch `hybrid-rover-local-heading-v1.16.1`, release tag
+`hybrid-rover-v1.16.1-r2`, adds `VehicleLocalPosition` MESSAGE_VERSION=1 with
+`heading_good_for_local_control`. Use `/fmu/out/vehicle_local_position_v1`.
+Rebuild this package and all dependent companion nodes; changing only the topic
+name with the old message definition is not compatible. The r1 tag is unchanged.
+
+The old `heading_good_for_control` still describes absolute heading alignment.
+The new flag can qualify a world-fixed, arbitrary-heading FRD estimate without
+claiming north alignment. It is not a replacement for timestamp, position,
+mode, health, or arming checks. See the matching PX4
+`docs/hybrid/frd-auto-land-heading.zh-CN.md` for estimator/landing semantics.
+
+VehicleLocalPosition.msg SHA-256:
+`782391c3408956f7302bfea673b81f2f1489e307151047047097f28724ce3ae7`.
+All other messages and services remain byte-identical to the preceding package.
+No MAVLink schema or QGC binding change is required by this release.
+Message identity checks passed; ROS 2 build and live DDS interoperation must be
+validated on the companion (ROS 2 is not installed in the firmware workspace).
+
+### Previous release
+
 The `hybrid-rover-v1.16.1` branch is synchronized from
 `QQgdiw/PX4-Autopilot` branch `feature/testc4-rover-tuning` at commit
 `7c4fb9e638787435351437c4dfc99e417adffd85`. It is the required ROS 2 message

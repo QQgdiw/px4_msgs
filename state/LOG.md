@@ -1,5 +1,17 @@
 # Engineering log
 
+## 2026-10-29 VehicleLocalPosition v1 local-heading qualification
+
+- User authorized a new independent local-heading qualification and coordinated
+  PX4/px4_msgs release. Absolute heading qualification retains its meaning.
+- VehicleLocalPosition MESSAGE_VERSION incremented 0 -> 1; topic gains `_v1`.
+  New branch preserves the original r1 tag and source branch.
+- All firmware messages and services compared byte-for-byte with the package;
+  only VehicleLocalPosition changes relative to r1 package contents.
+- No ROS installation is available here: no colcon or live DDS claim is made.
+  Firmware contains an optional conversion source; it is not deployed by this
+  package and v0 -> v1 sets the unprovable new flag false.
+
 ## 2026-09-07 Initial Hybrid/Rover px4_msgs pin
 
 - `QQgdiw/px4_msgs` did not previously exist. A public fork of
