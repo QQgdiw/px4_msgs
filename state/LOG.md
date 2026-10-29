@@ -1,5 +1,15 @@
 # Engineering log
 
+## 2026-10-29 r2 publication verification
+
+- Atomically pushed new branch and annotated tag hybrid-rover-v1.16.1-r2.
+- Tag object fe374609fd5bd3dadb9823090c956b7240351e5b, peeled commit
+  3b569db54de24ff3e7311ccb407693975f5601f6. Remote references verified.
+- Firmware source 2f04e0cf2aa7b6c4a2a8588d6fd1b8d4b9a92512 built successfully;
+  148 unit/functional suites and static message checks passed.
+- Old r1 tag remains e0f41fb57ed9217ba15730854f6c7c92b0262134. Server-side
+  protection for r2 and actual ROS/DDS validation remain unverified.
+
 ## 2026-10-29 VehicleLocalPosition v1 local-heading qualification
 
 - User authorized a new independent local-heading qualification and coordinated

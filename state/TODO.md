@@ -5,7 +5,8 @@
 - [x] Create isolated compatibility branch; preserve r1 branch/tag.
 - [x] Synchronize VehicleLocalPosition and compare all messages/services to PX4.
 - [x] Document versioned topic and rebuild requirement.
-- [ ] Commit and publish r2 annotated tag after firmware verification.
+- [x] Published r2 at 3b569db54de24ff3e7311ccb407693975f5601f6 with firmware
+      2f04e0cf2aa7b6c4a2a8588d6fd1b8d4b9a92512; remote refs verified.
 - [ ] Companion colcon build, dependency rebuild, real DDS validation.
 - [ ] Verify/configure server-side tag protection separately.
 

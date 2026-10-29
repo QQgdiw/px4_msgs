@@ -4,6 +4,8 @@
 
 - New branch: `hybrid-rover-local-heading-v1.16.1`; release annotated tag
   `hybrid-rover-v1.16.1-r2` (r1 must not move).
+- Published r2 peeled commit `3b569db54de24ff3e7311ccb407693975f5601f6`, matched
+  PX4 firmware `2f04e0cf2aa7b6c4a2a8588d6fd1b8d4b9a92512`; remote refs verified.
 - VehicleLocalPosition v1 adds heading_good_for_local_control. DDS topic gains
   `_v1`; r1 is not automatically compatible. Existing MAVLink is unchanged.
 - Complete flattened message/service comparison against current testc4 firmware
